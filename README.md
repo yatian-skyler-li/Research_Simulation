@@ -11,13 +11,13 @@ A primary class in this simulation is the Scenario. A scenario is used to mainta
 
 A scenario's environment is made up of tiles. Graphically these tiles work together to form a 2 dimensional grid, but the scenario stores them in a single array. These tiles represent different types of terrain, for example: grassy, ocean, or sandy. Tiles can also have an inhabitant (entity) living within them. 
 
-An entity is separated into two main types: flora (plants) and fauna (animals). A tile's characteristics dene what entities can inhabit that tile. Some animals, such as a fish, can only live in water based tiles while others, such as a dog, can only live in land based tiles.
+An entity is separated into two main types: flora (plants) and fauna (animals). A tile's characteristics define what entities can inhabit that tile. Some animals, such as a fish, can only live in water-based tiles while others, such as a dog, can only live in land-based tiles.
 
-A tile is located using a coordinate system (similar to the cartesian plane). This coordinate facilitates the conversion between a two dimensional view of the scenario and the tile array index.
+A tile is located using a coordinate system (similar to the cartesian plane). This coordinate facilitates the conversion between a two-dimensional view of the scenario and the tile array index.
 
-To represent the interactions between entities, the scenario uses the Event classes, specically MoveEvent and CollectEvent. An Event maintains a record of the locations that an entity interacts with. A MoveEvent is classied as an entity leaving its current tile and inhabiting a new (unoccupied) tile.
+To represent the interactions between entities, the scenario uses the Event classes, specifically MoveEvent and CollectEvent. An Event maintains a record of the locations that an entity interacts with. A MoveEvent is classified as an entity leaving its current tile and inhabiting a new (unoccupied) tile.
 
-An entity's characteristics are dened by its size. Larger entities are able to travel a further distance in a single movement. Accordiningly, the user gains a great out of research for studying larger entities than if they were small entities.
+An entity's characteristics are defined by its size. Larger entities are able to travel a further distance in a single movement. Accordingly, the user gains a greater out of research for studying larger entities than if they were small entities.
 
 ## JUnit Test
 The JUnit tests that we provide in test\researchsim directory were used to test both correct and incorrect implementations of entities, scenario, map, ans logging classes.
